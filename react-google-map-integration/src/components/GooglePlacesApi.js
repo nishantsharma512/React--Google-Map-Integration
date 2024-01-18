@@ -59,7 +59,11 @@ const SearchLocationInput = ({setSelectedLocation}) => {
                 <label>Type in your suburb or postcode</label>
             </div>
             <input
-                style={{ margin: "16px" }}
+                style={{     margin: "16px",
+                    width: "40vw",
+                    height: "20px",
+                    fontSize: "14px"
+                    /* padding: 5px; */ }}
                 ref={autoCompleteRef}
                 placeholder='Search Places ...'
                 onChange={(e) => setQuery(e.target.value)}
